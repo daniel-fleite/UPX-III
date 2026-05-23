@@ -103,3 +103,10 @@ botaoModo.addEventListener("click", () => {
         localStorage.setItem("tema", "light");
     }
 });
+
+// qr code com os repositórios
+const qrCode = document.getElementById("qrCode");
+
+const pageUrl = window.location.href;
+
+qrCode.src = `https://api.qrserver.com/v1/create-qr-code/?size=220x220&data=${encodeURIComponent(pageUrl)}`;

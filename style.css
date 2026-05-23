@@ -681,6 +681,24 @@ footer {
   transform: scale(1.1);
 }
 
+.qr-section {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.qr-section p {
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+#qrCode {
+  width: 220px;
+  border-radius: 20px;
+  padding: 15px;
+  background: white;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
 .footer-container {
   max-width: 1000px;
   margin: auto;
@@ -751,7 +769,8 @@ body.dark .problema-card,
 body.dark .tech-card,
 body.dark .arquitetura-box,
 body.dark .ods-card,
-body.dark .membro {
+body.dark .membro,
+body.dark #qrcode {
   background: #242424;
   box-shadow: 0 10px 25px rgba(0,0,0,0.35);
 }
