@@ -681,6 +681,51 @@ footer {
   transform: scale(1.1);
 }
 
+.repositorios {
+  text-align: center;
+}
+
+.repositorios-desc {
+  max-width: 700px;
+  margin: 0 auto 40px;
+}
+
+.repositorios-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.repo-card {
+  background: white;
+  width: 280px;
+  padding: 35px 25px;
+  border-radius: 20px;
+  text-decoration: none;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
+
+.repo-card:hover {
+  transform: translateY(-8px);
+}
+
+.repo-card img {
+  width: 80px;
+  margin-bottom: 20px;
+}
+
+.repo-card h3 {
+  color: #2e7d32;
+  margin-bottom: 10px;
+}
+
+.repo-card p {
+  color: #666;
+  line-height: 1.6;
+}
+
 .qr-section {
   text-align: center;
   padding: 80px 20px;
@@ -768,9 +813,14 @@ body.dark .problema-card,
 body.dark .tech-card,
 body.dark .arquitetura-box,
 body.dark .ods-card,
-body.dark .membro {
+body.dark .membro,
+body.dark .repo-card {
   background: #242424;
   box-shadow: 0 10px 25px rgba(0,0,0,0.35);
+}
+
+body.dark .repo-card p {
+  color: #d6d6d6;
 }
 
 body.dark .membro span {
@@ -987,6 +1037,11 @@ footer,
     position: static;
     margin: 0 auto 30px;
     display: flex;
+  }
+
+  .repositorios-container {
+    flex-direction: column;
+    align-items: center;
   }
 
   /* SECTIONS */
